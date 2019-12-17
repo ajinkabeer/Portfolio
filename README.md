@@ -2,4 +2,4 @@
 A simple portfolio page built using HTML and CSS.
 
 # 💫 Deploy
-This webpsite deployed on GitHub pages.
+This app is deployed on GitHub pages.
