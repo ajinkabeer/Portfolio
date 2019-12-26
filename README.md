@@ -1,5 +1,3 @@
-# ⭐️ Personal portfolio  
-A simple portfolio page built using HTML & CSS.
+# ⭐️ Personal portfolio
 
-# 💫 Deploy
-This app is deployed on GitHub pages.
+A simple portfolio page built using HTML & CSS.
