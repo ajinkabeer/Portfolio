@@ -1,3 +1,3 @@
 # Personal portfolio
 
-A simple portfolio page built using HTML & CSS.
+A simple portfolio built using HTML & CSS.
