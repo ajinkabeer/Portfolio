@@ -121,9 +121,54 @@ nav {
   transition: all 0.5s;
 }
 
-.illustration img {
+.illustration svg {
   width: 667px;
   height: 371px;
+}
+
+#Lines {
+  animation: lines 3s infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+#Head {
+  animation: head 5s infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+#Hand {
+  animation: hand 5s infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes lines {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(70px);
+  }
+}
+
+@keyframes head {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-10deg);
+  }
+}
+
+@keyframes hand {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(10deg);
+  }
 }
 
 @media (max-width: 1464px) {
@@ -159,7 +204,7 @@ nav {
     justify-content: space-between;
   }
 
-  .illustration img {
+  .illustration svg {
     display: none;
   }
   .name-box {
