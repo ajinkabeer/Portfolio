@@ -67,10 +67,10 @@ nav {
 }
 
 .name-and-links {
-  margin-top: 15%;
+  margin-top: 10%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -124,50 +124,21 @@ nav {
 .illustration svg {
   width: 667px;
   height: 371px;
+  margin-top: 80px;
 }
 
-#Lines {
-  animation: lines 3s infinite;
+#Cube {
+  animation: cube 5s infinite;
   transform-origin: center;
   transform-box: fill-box;
 }
 
-#Head {
-  animation: head 5s infinite;
-  transform-origin: center;
-  transform-box: fill-box;
-}
-
-#Hand {
-  animation: hand 5s infinite;
-  transform-origin: center;
-  transform-box: fill-box;
-}
-
-@keyframes lines {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(70px);
-  }
-}
-
-@keyframes head {
+@keyframes cube {
   from {
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(-10deg);
-  }
-}
-
-@keyframes hand {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(10deg);
+    transform: rotate(360deg);
   }
 }
 
