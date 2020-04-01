@@ -44,7 +44,8 @@ nav {
 }
 
 .nav-list-link:last-child {
- justify-content: right;
+  margin-left: auto;
+
 }
 
 .nav-link-anchor {
@@ -129,6 +130,8 @@ nav {
   height: 371px;
   margin-top: 80px;
 }
+
+
 
 #Cube {
   animation: cube 5s infinite;
