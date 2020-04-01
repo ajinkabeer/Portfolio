@@ -43,6 +43,10 @@ nav {
   margin-left: -46px;
 }
 
+.nav-list-link:last-child {
+ justify-content: right;
+}
+
 .nav-link-anchor {
   text-decoration: none;
   font-weight: 400;
