@@ -4,6 +4,7 @@
   --light-bg-color: #ffffff;
   --dark-bg-color: #272727;
   --light-font-color: #000000;
+  --dark-font-color: #ffffff;
   --primary-color: #ef4836;
 }
 
@@ -27,32 +28,42 @@ nav {
   margin-top: 46px;
 }
 
-nav ul {
+.nav-ordered-link {
   list-style: none;
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
 }
 
-nav ul li {
+.nav-list-link {
   margin-right: 56px;
   cursor: pointer;
 }
 
-nav ul li:first-child {
+.nav-list-link:first-child {
   margin-left: -46px;
 }
 
-nav ul li a {
+.nav-link-anchor {
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 400;
   color: var(--light-font-color);
   font-size: 20px;
   line-height: 25px;
 }
 
-nav ul li a:hover {
+.nav-link-anchor:hover {
   color: var(--primary-color);
+}
+
+.active {
+  background-color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--dark-font-color);
+  font-size: 20px;
+  line-height: 25px;
+  padding: 10px 43px;
 }
 
 .name-and-links {
@@ -66,7 +77,7 @@ nav ul li a:hover {
 .name-and-links h1 {
   font-family: Quicksand;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 400;
   font-size: 65.9221px;
   margin-bottom: auto;
 }
@@ -83,22 +94,31 @@ nav ul li a:hover {
 .name-and-links button {
   font-family: Quicksand;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 20px;
-  color: var(--primary-color);
   width: 165px;
   height: 55px;
-  border: 3px solid var(--primary-color);
   margin-right: 18px;
   cursor: pointer;
   padding: 15px 43px;
-  background-color: var(--light-bg-color);
   outline-style: none;
+  border: 2px solid #111;
+  box-shadow: 2px 2px #111;
+  background: var(--primary-color);
+  color: #fff;
 }
 
 .name-and-links button:hover {
-  background-color: var(--primary-color);
-  color: var(--light-bg-color);
+  background: var(--primary-color);
+  background: linear-gradient(to top, var(--primary-color) 50%, #fffff8 50%);
+  background-size: 200% 200%;
+  transition: all 0.5s ease-out;
+  color: var(--primary-color);
+}
+
+.name-and-links button:active {
+  box-shadow: 0 0;
+  transition: all 0.5s;
 }
 
 .illustration img {
@@ -118,15 +138,16 @@ nav ul li a:hover {
     margin-top: 46px;
   }
 
-  nav ul {
+  .nav-ordered-link {
     justify-content: flex-start;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-between;
   }
 
-  nav ul li:first-child {
+  .nav-list-link:first-child {
     margin-left: 0;
+    margin-bottom: 15px;
   }
 
   .name-and-links {
