@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --light-bg-color: #ffffff;
+  --dark-bg-color: #272727;
+  --light-font-color: #000000;
+  --primary-color: #ef4836;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--light-bg-color);
+  font-family: "Quicksand", sans-serif;
+}
+
+nav {
+  margin-right: 135px;
+  margin-left: 872px;
+  margin-top: 46px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  margin-right: 56px;
+  cursor: pointer;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--light-font-color);
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.name-and-links {
+  margin-top: 150px;
+  margin-left: 250px;
+  margin-right: 135px;
+  display: flex;
+  flex-direction: column;
+}
+
+.name-and-links h1 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 65.9221px;
+  margin-bottom: auto;
+}
+
+.name-and-links h3 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  letter-spacing: -0.03em;
+}
+
+.name-and-links button {
+  width: 165px;
+  height: 55px;
+  border: 3px solid #ef4836;
+  margin-right: 18px;
+  box-sizing: border-box;
+  cursor: pointer;
+  padding: 15px 43px;
+  background-color: var(--light-bg-color);
+}
+
+.name-and-links button:hover {
+  background-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.name-and-links button a {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.name-and-links button a:hover {
+  color: var(--light-bg-color);
+}
+
+.illustration img {
+  width: 667px;
+  height: 371px;
+  margin-left: 638px;
+}
