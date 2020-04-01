@@ -14,7 +14,7 @@
 body {
   background-color: var(--light-bg-color);
   font-family: "Quicksand", sans-serif;
-  margin-right: 135px;
+    margin-right: 135px;
   margin-left: 135px;
   overflow-y: hidden;
 }
@@ -77,6 +77,7 @@ nav {
   font-weight: 400;
   font-size: 65.9221px;
   margin-bottom: auto;
+  color:var(--light-font-color);
 }
 
 .name-and-links h3 {
@@ -86,6 +87,7 @@ nav {
   font-weight: normal;
   font-size: 30px;
   letter-spacing: -0.03em;
+  color:var(--light-font-color);
 }
 
 .name-and-links button {
@@ -179,5 +181,26 @@ nav {
 
   button {
     margin-bottom: 25px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--dark-bg-color);
+  }
+  .name-and-links h1 {
+    color: var(--dark-font-color);
+  }
+  .name-and-links h3 {
+    color: var(--dark-font-color);
+  }
+
+  .nav-link-anchor {
+    color:var(--dark-font-color)
+  }
+
+  .name-and-links button {
+    box-shadow: none;
+    border: none;
   }
 }
