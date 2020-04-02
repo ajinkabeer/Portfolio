@@ -16,7 +16,7 @@ if (lastMode === "dark") {
 }
 
 button.addEventListener("click", () => {
-  if (button.innerText === "Dark") {
+  if (button.innerText === "🌙") {
     darkMode();
   } else {
     lightMode();
@@ -25,7 +25,7 @@ button.addEventListener("click", () => {
 
 function darkMode() {
   localStorage.setItem("mode", "dark");
-  button.innerText = "Light";
+  button.innerText = "🌤️";
   body.style.backgroundColor = dark;
   h1.style.color = white;
   h3.style.color = white;
@@ -40,7 +40,7 @@ function darkMode() {
 
 function lightMode() {
   localStorage.setItem("mode", "light");
-  button.innerText = "Dark";
+  button.innerText = "🌙";
   body.style.backgroundColor = white;
   h1.style.color = black;
   h3.style.color = black;
