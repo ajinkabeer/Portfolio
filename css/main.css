@@ -16,10 +16,11 @@ body {
   margin-right: 135px;
   margin-left: 135px;
   overflow-y: hidden;
+  min-height: 100vh;
 }
 
 nav {
-  margin-top: 46px;
+  margin-top: 5vh;
 }
 
 .nav-ordered-link {
@@ -63,7 +64,7 @@ nav {
 }
 
 .name-and-links {
-  margin-top: 10%;
+  margin-top: 15vh;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -171,8 +172,7 @@ nav {
   .name-and-links {
     margin-left: 60px;
     margin-right: 20px;
-    margin-top: 10%;
-
+    margin-top: 15vh;
     display: flex;
     flex-direction: column;
   }
