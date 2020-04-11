@@ -127,16 +127,16 @@ nav {
 }
 
 #Cube {
-  animation: cube 5s infinite;
+  animation: cube 2s linear infinite;
   transform-origin: center;
   transform-box: fill-box;
 }
 
 @keyframes cube {
-  from {
+  0% {
     transform: rotate(0deg);
   }
-  to {
+  100% {
     transform: rotate(360deg);
   }
 }
