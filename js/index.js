@@ -29,13 +29,13 @@ function darkMode() {
   body.style.backgroundColor = dark;
   h1.style.color = white;
   h3.style.color = white;
-  anchor.forEach(item => {
-    if (item.id.includes("active")) {
-      item.style.color = primary;
-    } else {
-      item.style.color = white;
-    }
-  });
+  // anchor.forEach(item => {
+  //   if (item.id.includes("active")) {
+  //     item.style.color = primary;
+  //   } else {
+  //     item.style.color = white;
+  //   }
+  // });
 }
 
 function lightMode() {
@@ -44,11 +44,11 @@ function lightMode() {
   body.style.backgroundColor = white;
   h1.style.color = black;
   h3.style.color = black;
-  anchor.forEach(item => {
-    if (item.id.includes("active")) {
-      item.style.color = primary;
-    } else {
-      item.style.color = black;
-    }
-  });
+  // anchor.forEach(item => {
+  //   if (item.id.includes("active")) {
+  //     item.style.color = primary;
+  //   } else {
+  //     item.style.color = black;
+  //   }
+  // });
 }
