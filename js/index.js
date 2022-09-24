@@ -9,10 +9,10 @@ const black = "#000000";
 const dark = "#272727";
 const primary = "#ef4836";
 
-if (lastMode === "dark") {
-  darkMode();
-} else {
+if (lastMode === "light") {
   lightMode();
+} else {
+  darkMode();
 }
 
 button.addEventListener("click", () => {
